@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <nav>
+        <img id="logo" src="/assets/logo.png" alt="">
+        <span>Weather App</span>
+    </nav>
+
+    <main>
+        <div class="search-container">
+            <input type="text" name="cityname" id="cityInput" placeholder="Enter City name...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="result-container">
+            <h1>Weather Condition in <Span id="city"></Span></h1>
+            <div class="temp-and-img">
+                <!-- <img id="tempImg" src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png" alt="weather condition"> -->
+                <p><span id="temp"></span>&#8451;</p>
+            </div>
+            <!-- <h3 id="weather_descriptions"> Sunny</h3> -->
+
+            <div class="other-detail-table">
+                <table >
+                    <tr>
+                      <th>Other details</th>
+                      <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Wind Degrees</td>
+                        <td id="wind_degrees"></td>
+                      </tr>
+
+                      <tr>
+                        <td>Cloud Pct</td>
+                        <td id="cloud_pct"></td>
+                      </tr>  
+                      
+                    <tr>
+                      <td>Humidity</td>
+                      <td id="humidity"></td>
+                    </tr>
+                  
+                    <tr>
+                      <td>Feels like</td>
+                      <td id="feelslike"></td>
+                    </tr>
+                   
+                    <tr>
+                      <td>Wind Speed</td>
+                      <td id="windSpeed"></td>
+                    </tr>
+                  </table>
+                  
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
